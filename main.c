@@ -14,14 +14,16 @@ int main()
         int num4 = 0;
         int num5 = 0;
         int num6 = 0;
-  
+
+        float div100=100;
+
     for(int i = 0; i<100; i++){
         numbers[i]=(rand()%6) +1;
         } 
 
     for(int i = 0; i <100; i++ ){
        // printf("%d %d ", numbers[i], i);
-        if (numbers[i]==1) {
+            if (numbers[i]==1) {
             num1++;
          }
            if (numbers[i]==2) {
@@ -40,9 +42,13 @@ int main()
             num6++;
          }
     }
-
-    printf(" %d %d %d %d %d %d",num1, num2, num3, num4, num5, num6);
     
+    printf(" %d\n %d\n %d\n %d\n %d\n %d\n",num1, num2, num3, num4, num5, num6);
+
+    printf("%d\n", num1+num2*2+num3*3+num4*4+num5*5+num6*6);
+
+    printf("%.1f\n", (num1+num2*2+num3*3+num4*4+num5*5+num6*6)/div100);
+
 
     return 0;
 }
