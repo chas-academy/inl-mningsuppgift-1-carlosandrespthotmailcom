@@ -49,6 +49,8 @@ int main()
 
     printf("%.1f\n", (num1+num2*2+num3*3+num4*4+num5*5+num6*6)/div100);
 
+// går ej att få(17 18 23 18 12 12 326 3.3) vej ej varför.
+
 
     return 0;
 }
